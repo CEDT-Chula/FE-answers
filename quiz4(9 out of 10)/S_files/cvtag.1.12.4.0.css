@@ -1,0 +1,41 @@
+.cvtag-tag{
+    display: inline-block;
+    background-color: #5bc0de;
+    color:white;
+    padding: 2.4px 7.2px 3.6px 7.2px;
+    font-size: 1em;
+    border-radius: 4px 2px 8px 2px;
+}
+.cvtag-tag.cvtag-small{
+    font-size: 0.8em;
+}
+.cvtag-tag + .cvtag-tag{
+    margin-left:5px;
+}
+.cvtag-ui{
+
+}
+.cvtag-ui .bootstrap-tagsinput{
+    width: 100%;
+}
+.cvtag-ui .bootstrap-tagsinput .tag.label{
+    font-size: 1em;
+    border-radius: 4px 2px 8px 2px;
+}
+.cvtag-filterconsole-form{
+    display: flex;
+    align-items: center;
+}
+.cvtag-filterconsole-label{
+    flex-grow: 0;
+    margin: 0 5px 0 0;
+}
+.cvtag-tasinput-wrapper{
+    flex-grow: 1;
+}
+.cvtag-filterconsole-filterbutton-wrapper{
+    flex-grow: 0;
+}
+.cvtag-filtered-out{
+    display: none !important;
+}

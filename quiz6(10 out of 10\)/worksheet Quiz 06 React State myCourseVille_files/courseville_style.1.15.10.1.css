@@ -1,0 +1,1437 @@
+input,
+select {
+    border-radius: 4px;
+    border: solid 1px #AAA;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+option.courseville-unpublished {
+    color: #AAA;
+}
+
+/*---- Success / Error Color ----*/
+input.cv-error,
+select.cv-error,
+textarea.cv-error {
+    border-color: red;
+}
+
+span.cv-error {
+    color: red
+}
+
+span.cv-success {
+    color: green
+}
+
+/*---- Main Modal ----*/
+#courseville-main-modal .modal-header {
+    min-height: 16px;
+}
+
+#courseville-main-modal .modal-header .courseville-float-right {
+    margin: 0 2px;
+}
+
+#courseville-main-modal .modal-title {
+    margin-top: 10px;
+}
+
+#courseville-main-modal .modal-body [data-role="content"] {
+    width: 100%;
+    overflow: auto;
+}
+
+#courseville-main-modal .modal-body [data-role="spinner"] {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#courseville-main-modal .modal-body [data-role="spinner"] .courseville-css-spinner {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+#courseville-main-modal[data-state="maximized"] [data-role="maximize-modal"] {
+    display: none;
+}
+
+#courseville-main-modal[data-state="restored"] [data-role="restore-modal"] {
+    display: none;
+}
+
+#courseville-main-modal[data-state="maximized"] {
+    padding: 0 !important;
+}
+
+#courseville-main-modal[data-state="maximized"] .modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#courseville-main-modal[data-state="maximized"] .modal-content {
+    border-radius: 0;
+    height: 100%;
+}
+
+/*----- CV Main (Home) Layout -----*/
+body {
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #CCC;
+}
+
+#courseville-body,
+.courseville-body {
+    background: #FFF;
+    color: black;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#courseville-standings-body {
+    font-family: arial;
+}
+
+#courseville-logo-sider .courseville-fbpict-wrapper,
+#courseville-logo-sider .courseville-fbpict-sider {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 110%;
+}
+
+#courseville-logo-sider .courseville-fbpict-wrapper img {
+    border-radius: 4px;
+}
+
+#courseville-logo-sider-edit-button-wrapper>* {
+    vertical-align: middle;
+}
+
+#courseville-logout-button {
+    display: inline-block;
+}
+
+#courseville-manual-button {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    border: 2px solid var(--maintheme-color);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#courseville-manual-button>a {
+    text-decoration: none;
+    color: var(--maintheme-color);
+    font-size: 16px;
+    position: absolute;
+    top: -3px;
+    left: 3px;
+}
+
+/*END: ----- CV Main (Home) Layout -----*/
+.courseville-courseicon {
+    position: relative;
+}
+
+.courseville-courseicon:hover {
+    text-decoration: none;
+}
+
+.courseville-courseicon [data-part="bg-effect-mask"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.courseville-courseicon [data-part="bg-effect"] {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    top: -100%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: width 1s, height 1s;
+}
+
+.courseville-courseicon:hover [data-part="bg-effect"] {
+    width: 300%;
+    height: 300%;
+}
+
+.courseville-courseicon-icon {
+    max-width: 80px;
+    max-height: 80px;
+    position: relative;
+}
+
+.courseville-courseicon-icon>img {
+    width: 100%;
+    height: 100%;
+}
+
+.courseville-courseicon-text {
+    position: relative;
+}
+
+#courseville-live-message {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 2px #333333;
+}
+
+/*----- CV system message -----*/
+#courseville-system-message {
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 5px;
+    margin-bottom: 10px;
+    background-color: #9CFF00;
+}
+
+#courseville-system-message .courseville-item .courseville-marker {
+    width: 20px;
+    height: 20px;
+    float: left;
+    position: relative;
+    top: 5px;
+}
+
+#courseville-system-message .courseville-item .courseville-marker+div {
+    margin-left: 30px;
+}
+
+/*END:----- CV system message -----*/
+
+.courseville-header-navlink {
+    float: right;
+    font-weight: normal;
+    font-size: 0.8em;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    color: var(--maintheme-color);
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.courseville-header-navlink:hover {
+    text-decoration: underline;
+    color: #ff9c00;
+}
+
+.courseville-header-navlink i.fa {
+    font-size: 1.5em;
+}
+
+/*----- CV Bubble Item -----*/
+.courseville-bubble-item {
+    margin: 5px 0;
+}
+
+.courseville-bubble-content {
+    padding: 10px;
+    background: #EEE;
+    border-radius: 4px;
+}
+
+.courseville-bubble-portrait>img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/*END: ----- CV Bubble Item -----*/
+
+/*----- CV Floating Pane -----*/
+#courseville-floating-pane {
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #333333;
+    border-color: #AAAAAA;
+}
+
+/*END: ----- CV Floating Pane -----*/
+
+/*----- CV OCV -----*/
+#courseville-ocv-indicator {
+    border-style: solid;
+    border-color: #AAAAAA;
+    color: #555555;
+    background-color: #E9E9E9;
+    font-size: 10px;
+}
+
+/*END:---- CV OCV -----*/
+/*----- CV Group Edit -----*/
+#courseville-group-fg_color,
+#courseville-group-bg_color {
+    padding: 0;
+}
+
+/*END:----- CV Group Edit -----*/
+/*----- CV Login -----*/
+#courseville-login-page {
+    background: var(--maintheme-color);
+}
+
+#courseville-login-cv-sub-logo {
+    color: white;
+    text-align: center;
+}
+
+#courseville-login-button-wrapper {
+    background: white;
+}
+
+/*END:----- CV Login -----*/
+/*----- Attention Arrow -----*/
+.cv-attention-arrow {
+    position: absolute;
+    color: #ff9c00;
+    font-size: 3em !important;
+    animation: attention-updown 0.5s infinite alternate;
+}
+
+@keyframes attention-updown {
+    0% {
+        padding-bottom: 0;
+    }
+
+    100% {
+        padding-bottom: 5px;
+    }
+}
+
+/*END:----- Attention Arrow -----*/
+/*----- CV Generic Item -----*/
+.courseville-circled-short-text {
+    display: inline-block;
+    background-color: var(--maintheme-color);
+    color: white;
+    font-size: 0.8em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.courseville-livehelp-button img {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+}
+
+.courseville-float-right {
+    float: right;
+}
+
+.courseville-float-left-60 {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.courseville-float-left-60~div {
+    margin-left: 70px;
+}
+
+.courseville-align-right {
+    text-align: right;
+}
+
+.courseville-viewable-content-link-look {
+    color: var(--maintheme-color);
+    cursor: pointer;
+}
+
+.courseville-viewable-content-link-look:hover {
+    color: #ff9c00;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button.courseville-viewable-content-link-look {
+    border: none;
+    background: transparent;
+}
+
+/*END:----- CV Generic Item -----*/
+/*----- CV Maker -----*/
+.courseville-marker-form {
+    margin: 10px;
+}
+
+.courseville-marker-form .courseville-item {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.courseville-marker-form .courseville-item:hover {
+    background: #00c0ff;
+}
+
+.courseville-marker-form .courseville-item.courseville-active {
+    background: #ffae00;
+}
+
+/*END: ----- CV Maker -----*/
+
+/*----- CV TABLE -----*/
+.courseville-new-row {
+    border-bottom: 1px solid var(--maintheme-color);
+    background: #c1ffc1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.courseville-table {
+    width: 100%;
+    border: 0px;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td {
+    padding: 0px;
+    vertical-align: top;
+    margin: 0px;
+}
+
+.courseville-table tr:nth-child(2n) {
+    /*background:#d3f0ff;*/
+    background: #DDD;
+}
+
+.courseville-table tr:nth-child(2n+1) {
+    /*background:#edf9ff;*/
+    background: #EEE;
+}
+
+.courseville-table tr.courseville-active {
+    background: #9CFF00;
+}
+
+.courseville-table th {
+    /*background:#9CFF00;*/
+    color: white;
+    background: #888;
+    font-weight: normal;
+}
+
+.courseville-zebra:nth-child(2n) {
+    /*background:#d3f0ff;*/
+    background: #DDD;
+}
+
+.courseville-zebra:nth-child(2n+1) {
+    /*background:#edf9ff;*/
+    background: #EEE;
+}
+
+.courseville-action-col {
+    text-align: right;
+    width: 60px;
+}
+
+.courseville-action-col.courseville-3-button {
+    text-align: right;
+    width: 90px;
+}
+
+#courseville-course-notification {
+    border-radius: 4px;
+    background-color: #DDD;
+    color: #333;
+    padding: 5px;
+}
+
+.courseville-notification-table {
+    width: 100%;
+}
+
+table.sortable:not(.courseville-cancel) tbody>tr {
+    cursor: move;
+}
+
+table.sortable:not(.courseville-cancel) tbody>tr:hover {
+    background-color: #fee9c8;
+}
+
+.courseville-tabletop-bar>* {
+    vertical-align: middle;
+}
+
+/*END: ----- CV TABLE -----*/
+
+/*----- CV Acknowledge Div -----*/
+.courseville-content-panel-acknowledge-div {
+    padding: 5px;
+    background: #DDDDDD;
+    margin: 5px 0px 10px 0px;
+    border-radius: 4px;
+}
+
+.courseville-content-panel-acknowledge-list {
+    padding-left: 50px;
+    color: var(--maintheme-color);
+    font-size: 9px;
+}
+
+/*END: ----- CV Acknowledge Div -----*/
+/* ----- CV Buttons -----*/
+.courseville-post-to-fb-button {
+    width: 20px;
+    height: 20px;
+}
+
+/*END: ----- CV Buttons -----*/
+/*----- icon calendar composite -----*/
+.courseville-icon-calendar-root {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    padding: 2px;
+    height: 38px;
+    font-family: arial, "sans-serif";
+    font-weight: normal;
+    color: white;
+    font-size: 12px;
+}
+
+.courseville-icon-calendar-root[color='cvblue'] {
+    background: url(pict/icon_calendar/icon_date_calendar_flat_cvblue_bg.png);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.courseville-icon-calendar-root[color='green'] {
+    background: url(pict/icon_calendar/icon_date_calendar_flat_green_bg.png);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.courseville-icon-calendar-root-top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 38px;
+    height: 40px;
+}
+
+.courseville-icon-calendar-root-top .inner {
+    position: absolute;
+    top: -1px;
+    width: 38px;
+    text-align: center;
+}
+
+.courseville-icon-calendar-root-mid {
+    position: absolute;
+    top: 11px;
+    left: 0px;
+    width: 38px;
+    height: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.courseville-icon-calendar-root-bottom {
+    position: absolute;
+    top: 24px;
+    left: 0px;
+    width: 38px;
+    height: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+/*END: ----- icon calendar composite -----*/
+/*----- Classroom Tools -----*/
+.cv-tool-item {
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cv-tool-item:nth-child(2n+1) {
+    background-color: #EEEEEE;
+}
+
+.cv-tool-item:nth-child(2n) {
+    background-color: #DDDDDD;
+}
+
+.cv-tool-item-icon {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.cv-tool-item-icon+div {
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+.cv-tool-item-title {
+    font-size: 1.2em;
+}
+
+.cv-tool-item-title a {
+    color: var(--maintheme-color);
+}
+
+.cv-tool-item-title a:hover {
+    color: var(--hot-color);
+}
+
+/*END: ----- Classroom Tools -----*/
+/* transform */
+.courseville-rot-270 {
+    transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    /* IE 9 */
+    -moz-transform: rotate(270deg);
+    /* Firefox */
+    -webkit-transform: rotate(270deg);
+    /* Safari and Chrome */
+    -o-transform: rotate(270deg);
+    /* Opera */
+}
+
+/* feed page */
+.courseville-feed-item-container {
+    margin: 10px 0;
+}
+
+.courseville-feed-item {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #AAAAAA;
+    background: rgba(0, 0, 0, 0.05);
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.courseville-feed-item:hover {
+    background: white;
+    border-color: var(--maintheme-color);
+    text-decoration: none;
+    color: var(--maintheme-color);
+    overflow: visible;
+}
+
+.courseville-feed-item:active,
+.courseville-feed-item:focus {
+    text-decoration: none;
+}
+
+.courseville-feed-item>.media-left {
+    min-width: 50px;
+    position: relative;
+    overflow: visible;
+}
+
+.courseville-feed-item-icon-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.courseville-feed-item:hover .courseville-feed-item-icon-img {
+    width: 50px;
+    height: 50px;
+    top: -5px;
+    left: -5px;
+}
+
+.courseville-feed-item-type>span {
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.courseville-feed-item-type .courseville-type-announcement {
+    background: #d3f0ff;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.courseville-feed-item-type .courseville-type-material {
+    background: #d3ffde;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.courseville-feed-item-type .courseville-type-assignment {
+    background: #ffe1d3;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.courseville-feed-item-title {
+    font-weight: bold;
+}
+
+.courseville-feed-item-course {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.courseville-feed-item-created {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* Flagging */
+#courseville-flag-filter-flags {
+    padding: 10px;
+}
+
+#courseville-flag-filter-flags .courseville-flag {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 2px;
+    margin: 2px;
+    background-color: transparent;
+}
+
+#courseville-flag-filter-flags .courseville-flag.courseville-active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.courseville-flagged-target-info [data-part="portrait"] {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.courseville-flagging-toggle-button {
+    display: inline-block;
+    margin: 2px;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    background: white;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.courseville-flagging-toggle-button[data-active="1"] {
+    position: relative;
+    top: 1px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), inset 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.courseville-flagging-toggle-button:hover {
+    border: 1px solid #ffba00;
+}
+
+.courseville-flagging-toggle-button img.courseville-flag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#courseville-flagging-status {
+    border-top: 1px dotted #AAAAAA;
+    color: #AAAAAA;
+}
+
+/*----- Generic Item ---*/
+.courseville-panel {
+    padding: 10px;
+    border-radius: 4px;
+    background: #DDD;
+    margin: 10px 0;
+}
+
+.courseville-instruction {
+    color: #000000;
+    background: #DDDDDD;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.courseville-instruction[color='orange'] {
+    background: var(--hot-color);
+    border-color: transparent;
+    color: white;
+}
+
+.courseville-instruction[color='yellowgreen'] {
+    background: #9CFF00;
+    border-color: transparent;
+    color: black;
+}
+
+.courseville-instruction[color='white'] {
+    background: white;
+    border: 1px solid #AAAAAA;
+    color: #666666;
+}
+
+.courseville-instruction[color='palesky'] {
+    background: var(--palesky-color);
+    border: transparent;
+    color: black;
+}
+
+.courseville-instruction>ul {
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.courseville-label {
+    vertical-align: text-top;
+    display: inline-block;
+}
+
+.courseville-label:before {
+    display: inline-block;
+    content: ' ';
+    background-image: url(pict/bullet_arrow.svg);
+    background-size: 10px 10px;
+    height: 10px;
+    width: 10px;
+}
+
+button.cv-fa-collapse-control {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.cv-fa-collapse-control>.fa {
+    color: var(--maintheme-color);
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.courseville-collapse-control {
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.courseville-collapse-no-control {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.courseville-generic-img-button {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.courseville-generic-img-toggle-button {
+    cursor: pointer;
+}
+
+.courseville-generic-img-button-label {
+    cursor: pointer;
+    color: #000000;
+}
+
+.courseville-generic-text-button {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
+    display: inline-block;
+    background: white;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.courseville-generic-text-button-current {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
+    display: inline-block;
+    color: #000000;
+    font-weight: bold;
+}
+
+.courseville-generic-text-button-current {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid #AAAAAA;
+    cursor: pointer;
+    color: #000000;
+    font-weight: normal;
+}
+
+.cv-fa-button {
+    cursor: pointer;
+    color: var(--maintheme-color);
+    font-size: 1.5em;
+    border: none;
+    background: transparent;
+}
+
+.cv-fa-button:hover {
+    color: #ffae00;
+}
+
+.cv-fa-button>i.fa+.cv-fa-button-label {
+    font-size: 0.6em;
+    top: -0.2em;
+    margin-left: 2px;
+    position: relative;
+}
+
+.cv-fa-button.cv-fa-disabled {
+    cursor: not-allowed;
+    color: #AAA;
+}
+
+.cv-fa-button.cv-fa-disable:hover {
+    color: #AAA;
+}
+
+.cv-inline-block {
+    display: inline-block;
+}
+
+.cv-fa-button.cv-fa-lg {
+    font-size: 3em;
+    line-height: 50%;
+}
+
+.cv-noborder {
+    border: none !important;
+}
+
+/*END:----- Generic Item ---*/
+/*--- CV BS ---*/
+.label.label-primary.cv-bs {
+    background-color: var(--maintheme-color);
+}
+
+.badge.cv-bs {
+    font-weight: normal;
+    border-radius: 4px;
+    background: #AAA;
+    color: white;
+    padding: 2px 5px;
+}
+
+.badge.cv-bs.badge-danger {
+    background: red;
+}
+
+.badge.cv-bs.badge-warning {
+    background: #FF9C00;
+}
+
+.btn.cv-bs {
+    padding: 5px 10px;
+}
+
+.btn-primary.cv-bs {
+    background-color: var(--maintheme-color);
+    border-color: var(--maintheme-color);
+}
+
+.btn-primary.cv-bs:hover {
+    background-color: #FF9C00;
+    border-color: #FF9C00;
+}
+
+.btn-default.cv-bs:hover {
+    background-color: #FF9C00;
+    border-color: #FF9C00;
+    color: white;
+}
+
+.btn-default.cv-bs {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    border: solid 1px;
+}
+
+.btn-hot.cv-bs {
+    background-color: var(--hot-color);
+    border-color: var(--hot-color);
+}
+
+.btn-hot.cv-bs:hover {
+    background-color: var(--maintheme-color);
+    border-color: var(--maintheme-color);
+    color: white;
+}
+
+.btn-danger.cv-bs:hover {
+    background-color: white;
+    color: #c61e1e;
+}
+
+.btn-danger.cv-bs {
+    color: #fff;
+    background-color: #c61e1e;
+    border-color: #c61e1e;
+    border: solid 1px;
+}
+
+.modal.cv-bs .modal-dialog {
+    border-radius: 8px;
+}
+
+.modal.cv-bs .modal-header,
+.modal.cv-bs .modal-body,
+.modal.cv-bs .modal-footer {
+    background-color: white
+}
+
+.modal.cv-bs .modal-header {
+    border: none;
+    border-radius: 8px 8px 0 0;
+    padding: 0 15px;
+    min-height: 25px;
+}
+
+.modal-header>.cv-header-right-control {
+    display: inline-block;
+    float: right;
+}
+
+.modal.cv-bs .modal-footer {
+    border: none;
+    border-radius: 0 0 8px 8px;
+    padding: 0 15px;
+    min-height: 10px;
+}
+
+.nav-tabs.cv-bs {
+    margin-top: 10px;
+}
+
+.tab-content.cv-bs {
+    margin: 10px 0;
+}
+
+.nav-tabs.cv-bs>li>a {
+    background: #DDD;
+}
+
+.nav-tabs.cv-bs>li>a:hover {
+    background: var(--hot-color);
+    color: black;
+}
+
+.nav-tabs.cv-bs>li.active>a {
+    background: white;
+}
+
+.nav-tabs.cv-bs>li.active>a:hover {
+    background: white;
+    color: black;
+}
+
+.label-success.cv-bs {
+    background-color: #9CFF00;
+    color: black;
+}
+
+.alert.cv-bs {
+    border: none;
+}
+
+.alert-info.cv-bs {
+    background: #9CFF00;
+    color: black;
+}
+
+.alert-success.cv-bs {
+    border: 1px solid #9CFF00;
+    background: white;
+    color: black;
+}
+
+/*END:--- CV BS ---*/
+/*---- Student's assessment list ----*/
+.cv-due-col {
+    width: 60px;
+}
+
+.courseville-autograded-qs-result {
+    padding: 3px;
+    border-radius: 4px;
+    background-color: #DDDDDD;
+}
+
+/*END:---- Student's assessment list ----*/
+/*----- Group Card & Group Page -----*/
+#courseville-grouping-select-div {
+    border-bottom: 1px black dotted;
+    padding-bottom: 10px;
+    margin: 10px 0;
+}
+
+#courseville-grouping-select-div #courseville-grouping-select {
+    width: 100%;
+}
+
+#courseville-grouping-control-panel {
+    margin-top: 2px;
+}
+
+#courseville-grouping-control-panel .cv-fa-button {
+    margin: 0 5px;
+}
+
+#courseville-group-card-listing {
+    position: relative;
+    overflow: visible;
+}
+
+#courseville-group-card-listing>.courseville-item {
+    position: absolute;
+    cursor: pointer;
+    transition: left 0.5s, margin-top 0.5s;
+}
+
+#courseville-group-edit-card-preview {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.courseville-group-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+    width: 370px;
+    height: 200px;
+    text-align: left;
+    display: inline-block;
+}
+
+.courseville-group-card-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 8px;
+    transition: color 2s, background-color 2s;
+}
+
+.courseville-group-card-control {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.courseville-group-card-cover-overlay {
+    position: absolute;
+    width: 370px;
+    height: 140px;
+    border-radius: 8px 8px 0 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+}
+
+.courseville-group-card-cover {
+    position: absolute;
+    width: 370px;
+    height: 140px;
+    border-radius: 8px 8px 0 0;
+}
+
+.courseville-group-card-flag {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 8px;
+}
+
+.courseville-group-card-members {
+    position: absolute;
+    color: white;
+    top: 10px;
+    bottom: 130px;
+    left: 110px;
+}
+
+.courseville-group-card-name {
+    position: absolute;
+    top: 150px;
+    left: 110px;
+    font-size: 1.2em;
+}
+
+.courseville-group-card-slogan {
+    position: absolute;
+    top: 170px;
+    left: 110px;
+    font-size: 0.8em;
+}
+
+/*END:----- Group Card -----*/
+/*---- Admin grouping ---*/
+#courseville-grouping-list-tbody tr.courseville-unpublished {
+    color: #AAA;
+}
+
+/*END:---- Admin grouping ---*/
+/*---- Score By Item ---*/
+.courseville-score-by-item-list-item.courseville-unpublished {
+    color: #AAA;
+}
+
+/*END:---- Score By Item ---*/
+/* hide scroll bar for Chrome */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    /* hide scrol bar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.cv-active-panel {
+    position: fixed;
+    bottom: -250px;
+    right: 20px;
+    width: 250px;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 3px 0;
+    border-radius: 4px;
+    transition: bottom 2s;
+    font-size: 0.9em;
+}
+
+.cv-active-panel.revealed {
+    bottom: -10px;
+}
+
+.cv-active-panel>.cv-header {
+    position: relative;
+    height: 25px;
+    padding: 2px 10px;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.cv-active-panel-header-img-play>img {
+    height: 25px;
+}
+
+.cv-active-panel>.cv-header>.cv-control {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.cv-active-panel>.cv-body {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    height: 225px;
+}
+
+.cv-active-panel>.cv-body [data-role="viewport"] {
+    position: absolute;
+    overflow: auto;
+    top: 10px;
+    bottom: 15px;
+    right: 5px;
+    left: 5px;
+}
+
+.cv-active-panel .cv-body .cv-item {
+    min-height: 20px;
+    margin: 5px 2px;
+}
+
+.cv-active-panel .cv-body .cv-item [data-col="left"] {
+    float: left;
+    width: 25px;
+}
+
+.cv-active-panel .cv-body .cv-item [data-col="left"]>img {
+    width: 25px;
+    height: 25px;
+}
+
+.cv-active-panel .cv-body .cv-item [data-col="right"] {
+    float: right;
+    width: 20px;
+    text-align: right;
+}
+
+.cv-active-panel .cv-body .cv-item [data-col="middle"] {
+    margin-right: 25px;
+    margin-left: 30px;
+}
+
+.cv-active-panel>.cv-body .cv-fa-button,
+.cv-active-panel>.cv-header .cv-fa-button {
+    color: white;
+}
+
+.cv-active-panel>.cv-body .cv-fa-button:hover,
+.cv-active-panel>.cv-header .cv-fa-button:hover {
+    color: #FF9C00;
+}
+
+/*---- Spinner ----*/
+.courseville-css-spinner {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    border-top: 0.25em solid rgba(255, 255, 255, 0.2);
+    border-right: 0.25em solid rgba(255, 255, 255, 0.2);
+    border-bottom: 0.25em solid rgba(255, 255, 255, 0.2);
+    border-left: 0.25em solid rgba(255, 255, 255, 1);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: courseville-css-spinner-load 0.8s infinite linear;
+    animation: courseville-css-spinner-load 0.8s infinite linear;
+}
+
+.courseville-css-spinner,
+.courseville-css-spinner:after {
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+@-webkit-keyframes courseville-css-spinner-load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes courseville-css-spinner-load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.courseville-css-spinner.courseville-light-bg {
+    border-top: 0.25em solid var(--maintheme-color-trans-40);
+    border-right: 0.25em solid var(--maintheme-color-trans-40);
+    border-bottom: 0.25em solid var(--maintheme-color-trans-40);
+    border-left: 0.25em solid var(--maintheme-color);
+}
+
+/*END:---- Spinner ----*/
+/*---- Post to FB ----*/
+.courseville-post-to-fb-options {
+    max-width: 350px;
+}
+
+.courseville-post-to-fb-options>.courseville-item {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #AAA;
+}
+
+.courseville-post-to-fb-options>.courseville-item:last-child {
+    border: none;
+}
+
+.courseville-post-to-fb-options .fa {
+    font-size: 40px;
+    float: left;
+}
+
+.courseville-post-to-fb-options .fa+div {
+    margin: 10px 0px 20px 60px;
+}
+
+.courseville-post-to-fb-options div[data-role="url"] {
+    clear: both;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.courseville-post-to-fb-options .fb-share-button {
+    margin: 10px 0;
+}
+
+.courseville-post-to-fb-options .fb-share-button>span {
+    width: 100px !important;
+    height: 20px !important;
+}
+
+.courseville-post-to-fb-options .fb-share-button>span>iframe {
+    width: 100px !important;
+    height: 20px !important;
+}
+
+/*---- MISC common element ----*/
+.cv-assignment-marker {
+    width: 24px;
+}

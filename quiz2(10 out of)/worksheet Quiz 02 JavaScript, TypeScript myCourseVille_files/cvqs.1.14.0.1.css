@@ -1,0 +1,190 @@
+#cvqs-analytic-body{
+	font-size:12px;
+}
+.cvqs-qs-wrapper{
+	padding:5px 0;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.cvqs-qs-wrapper.mockup{
+	background:transparent url(../courseville/pict/bg_preview.png);
+}
+.cvqs-qs-wrapper.locked{
+	background:transparent url(../courseville/pict/bg_locked.png);
+}
+.cvqs-qs-ol > li:nth-child(3n+1) .cvqs-qstn-wrapper.locked{
+	background-color:rgba(197, 235, 255, 0.65);
+}
+.cvqs-qs-ol > li:nth-child(3n+2) .cvqs-qstn-wrapper.locked{
+	background-color:rgba(255, 238, 197, 0.65);
+}
+.cvqs-qs-ol > li:nth-child(3n) .cvqs-qstn-wrapper.locked{
+	background-color:rgba(205, 255, 197, 0.65);
+}
+.cvqs-qs-ol{
+	padding: 0;
+}
+.cvqs-qs-ol > li{
+	display: block;
+}
+.cvqs-qs-title{
+	font-size:14px;
+	color:black;
+	border-bottom:1px solid black;
+}
+.cvqs-qs-body{
+	background:#ffecce;
+	border:#a96700;
+	color:#a96700;
+	padding:5px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.cvqs-qstn-wrapper{
+	position:relative;
+	padding:10px 5px;
+	margin-bottom:10px;
+	border-radius: 4px;
+}
+#courseville-worksheet-root .cvqs-qstn-wrapper > .cvqs-inner{
+	padding: 16px 45px 16px 16px;
+}
+.cvqs-qs-ol > li:nth-child(3n+1) .cvqs-qstn-wrapper{
+	background-color:#c5ebff;
+}
+.cvqs-qs-ol > li:nth-child(3n+2) .cvqs-qstn-wrapper{
+	background-color:#ffeec5;
+}
+.cvqs-qs-ol > li:nth-child(3n) .cvqs-qstn-wrapper{
+	background-color:#cdffc5;
+}
+.cvqs-qstn-weight{
+	float: left;
+	padding: 3px;
+	color:var(--hot-color);
+	font-size: 2em;
+	font-weight:bold;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.cvqs-qstn-question{
+	margin-left:45px;
+}
+.cvqs-qstn-answer-wrapper{
+	margin-left:45px;
+}
+.cvqs-answer-instruction{
+	margin: 0;
+	font-size: 1em;
+	font-weight:normal;
+    border: none;
+	color: rgba(0,0,0,0.4);
+}
+.cvqs-answer-multiplechoice-choiceitem{
+
+}
+.cvqs-answer-multiplechoice-choiceitem > label{
+	width: 100%;
+	margin:0 0 0 -5px;
+	padding:5px;
+	cursor:pointer;
+	background: transparent;
+	border-radius: 4px;
+}
+.cvqs-answer-multiplechoice-choiceitem > label:hover{
+	background: rgba(255,255,255,0.3);
+}
+	
+.cvqs-answer-multiplechoice input{
+	vertical-align: middle;
+}
+.cvqs-answer-multiplechoice-content{
+	display:inline-block;
+	vertical-align: middle;
+	padding:5px;
+}
+.cvqs-answer-opentext textarea{
+	width:100%;
+	height: 50px;
+}
+.cvqs-qstn-info-on-point[data-mode="mockup"]{
+	margin-left:45px;
+}
+.cvqs-qstn-info-on-point-content-mockup{
+	background: #FFFFFFAA;
+}
+.cvqs-qstn-info-on-point-content-mockup [data-part="label-point"]{
+	display: flex;
+	align-items: center;
+}
+.cvqs-qstn-info-on-point-content-mockup [data-part="point"]{
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0 8px;
+}
+.cvqs-qstn-info-on-point-content-form{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #FFFFFF88;
+	border-radius: 0 4px;
+}
+#cvqs-analytic-leftbar{
+	width:200px;
+	float:left;
+}
+#cvqs-analytic-main{
+	margin-left:210px;
+}
+#cvqs-analytic-leftbar-nav .cvqs-header{
+	border-bottom:2px solid var(--maintheme-color);
+}
+#cvqs-analytic-leftbar-nav .cvqs-item{
+	cursor:pointer;
+	background:white;
+	border-bottom:1px dotted #AAAAAA;
+}
+#cvqs-analytic-leftbar-nav .cvqs-item:hover{
+	background:#fff1d3;
+	color:#FFAA00;
+	border-bottom:1px dotted #FFAA00;
+}
+td.cvqs-analytic-qstn-pre-column{
+	width:20px;
+}
+td.cvqs-analytic-qstn-main-column{
+	width:250px;
+}
+td.cvqs-analytic-qstn-result-column{
+	width:250px;
+}
+.cvqs-qstn-answer-bullet{
+	color:#018ADA;
+	font-family:arial,helvetica,sans-serif; 
+	font-size:18px;
+}
+.cvqs-result-bar{
+	background:var(--maintheme-color);
+	display:inline-block;
+	height:20px;
+}
+td.cvqs-result-bar-host{
+	width:150px;
+}
+.cvqs-creator-answer-list{
+	padding:10px;
+	background-color: white;
+	border-radius: 8px;
+}
+.cvqs-floating-mark{
+	position:absolute;
+	bottom:30%;
+	right:0;
+	text-align: center;
+	width: 80px;
+    color: rgba(0,0,0,0.4);
+    font-size: 0.8em;
+}
+.cvqs-floating-mark > img{
+	width:100%;
+}

@@ -1,0 +1,11 @@
+:root{
+    --maintheme-color:#018ADA;
+    --maintheme-color-darker: #006098;
+    --maintheme-color-trans-80: #018ADACC;
+    --maintheme-color-trans-40: #018ADA66;
+    --hot-color:#FFA200;
+    --palesky-color:#D0F0FF;
+    --table-striped-bg:#7ce0ff;
+    --maintheme-striped-color-bg-1:#bef0ff;
+    --maintheme-striped-color-bg-2:#e6f9ff;
+}
